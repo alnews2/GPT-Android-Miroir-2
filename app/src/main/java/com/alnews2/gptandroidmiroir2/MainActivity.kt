@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import com.alnews2.gptandroidmiroir2.camera.CameraPermissionGranted
 import com.alnews2.gptandroidmiroir2.camera.CameraPreview
 
 class MainActivity : ComponentActivity() {
@@ -13,7 +14,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             Surface(modifier = Modifier.fillMaxSize()) {
-                CameraPreview(modifier = Modifier.fillMaxSize())
+                CameraPermissionGranted {
+                    CameraPreview(modifier = Modifier.fillMaxSize())
+                }
             }
         }
     }
