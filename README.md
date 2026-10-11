@@ -6,6 +6,12 @@ Application Android Kotlin + Jetpack Compose.
 
 Première fonctionnalité : afficher l'aperçu de la caméra avant en mode paysage.
 
+## Fonctionnalités actuelles
+
+- Aperçu caméra avant avec CameraX.
+- Affichage plein écran en paysage.
+- Gestion runtime de la permission caméra.
+
 ## Workflow
 
 - Branches dédiées par fonctionnalité
@@ -20,3 +26,10 @@ Première fonctionnalité : afficher l'aperçu de la caméra avant en mode paysa
 - Jetpack Compose
 - CameraX
 - Gradle Kotlin DSL
+
+## Validation CI
+
+La CI exécute automatiquement :
+
+- les tests unitaires ;
+- la compilation debug Android.
