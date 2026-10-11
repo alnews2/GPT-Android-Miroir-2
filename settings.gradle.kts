@@ -6,7 +6,7 @@ pluginManagement {
     }
 }
 
- dependencyResolutionManagement {
+dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
@@ -15,3 +15,4 @@ pluginManagement {
 }
 
 rootProject.name = "GPT-Android-Miroir-2"
+include(":app")
